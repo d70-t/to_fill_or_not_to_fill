@@ -8,6 +8,10 @@ Basically the two standpoints are:
 
 This repository collects examples of how data which is stored according to either of those two philosophies can be read in various programming environments.
 
+The example are meant to be done in a way which one would usually approach the problem of computing a cloud fraction from the sample datasets.
+As the authors are not necessarily native or fluent in the respective programming languages, so please raise an issue if you feel that something would be implemented differently by a native programmer in that language.
+We are also searching for more examples in more languages, so please feel free to add more as you like :-)
+
 ## Results
 
 Please click on the icons in the table to go to the example scripts:
