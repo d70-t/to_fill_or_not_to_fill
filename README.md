@@ -18,7 +18,7 @@ Please click on the icons in the table to go to the example scripts:
 
 | environment | `_FillValue` | special `flag_meaning` | remarks |
 | ----------- | ------------ | ---------------------- | ------- |
-| Python xarray | [😀](Python_cloudiness_fill.ipynb) | [😀](Python_cloudiness_unknown.ipynb) | `_FillValue` variant decodes into `float` 😒, both variants feel almost identical |
+| Python xarray | [😀](Python_cloudiness_fill.ipynb) | [😀](Python_cloudiness_unknown.ipynb) | `_FillValue` variant decodes into `float` 😒 because Python doesn't know `NA` or Union types and [pandas doesn't like `np.ma`](https://pandas.pydata.org/pandas-docs/version/0.19.2/gotchas.html#nan-integer-na-values-and-na-type-promotions), both variants feel almost identical |
 | Julia | [😍](Julia_cloudiness_fill.ipynb) | [😐](Julia_cloudiness_flag.ipynb) | `_FillValue` decodes into `Union{Missing, Int16}` which makes life a lot easier |
 | R | [😍](R_cloudiness_fill.ipynb) | [😒](R_cloudiness_flag.ipynb) | `_FillValue` decodes into `NA` which makes life a lot easier, missing list comprehensions make handling flags a lot harder |
 
